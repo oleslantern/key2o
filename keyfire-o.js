@@ -5,12 +5,10 @@
 // @description  try to take over the world!
 // @author       You
 // @match        *://*/*
-// @exclude      https://console.firebase.google.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=google.com
 // @require      https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.9/dayjs.min.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js
-// @require      file:///E:/teampermonkey/_/Keys/keys.js
 // @grant        GM_xmlhttpRequest
 // @grant        GM_setValue
 // @grant        GM_getValue
