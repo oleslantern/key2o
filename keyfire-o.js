@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Google Userscript
+// @name         Google v2 Userscript
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  try to take over the world!
