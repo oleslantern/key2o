@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Clips</title>
+	</head>
+	<body>
+		<div id="content"></div>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+			integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script type="text/javascript">
+			let apiUrl =
+				"https://keys-cc824-default-rtdb.firebaseio.com/clips6.json";
+
+			// Make a GET request
+			fetch(apiUrl)
+				.then((response) => {
+					if (!response.ok) {
+						throw new Error("Network response was not ok");
+					}
+					return response.json();
+				})
+				.then((data) => {
+					const clips = Object.values(data).reverse().slice(0, 20);
+					clips
+						.map((clip) => ({
+							...clip,
+							domain: new URL(clip.copiedFrom).hostname,
+						}))
+						.forEach((clip) =>
+							$("#content").append(`
+						<span>
+
+							<p>${clip.IDP} copied from <a href="${clip.copiedFrom}">${clip.domain}</a></p>
+							<p>${new Date(clip.time).toString()}</p>
+							<p><textarea name="" id="">${clip.data}</textarea></p>
+						</span><hr/>`),
+						);
+				})
+				.catch((error) => {
+					console.error("Error:", error);
+				});
+		</script>
+	</body>
+</html>
