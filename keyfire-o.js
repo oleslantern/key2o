@@ -5,8 +5,7 @@
 // @description  try to take over the world!
 // @author       You
 // @match        *://*/*
-// @exclude      https://mega.io
-// @exclude      https://mega.io*
+// @exclude      https://mega.*
 // @require      https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.9/dayjs.min.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js
 // @grant        GM_xmlhttpRequest
