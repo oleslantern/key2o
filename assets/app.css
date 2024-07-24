@@ -1,0 +1,52 @@
+.ip {
+	font-weight: bold;
+}
+.value {
+	font-weight: bold;
+}
+
+.title {
+	font-weight: bold;
+	font-style: italic;
+	color: blue;
+}
+.host {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.time {
+}
+
+.caja-grau {
+	background-color: #b7d5ac;
+}
+
+.mozos-grau {
+	background-color: #dbead5;
+}
+
+.vitrina-grau {
+	background-color: #dbead5;
+}
+
+.caja-sol {
+	background-color: #87ceeb;
+}
+
+.caja-28 {
+	background-color: #ffb2b2;
+}
+/*
+.type-password {
+	background-color: yellow;
+}
+
+.name-email {
+	background-color: yellow;
+}*/
+
+.cred {
+	background-color: yellow;
+/*	font-weight: bold;*/
+}
